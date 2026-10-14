@@ -1,0 +1,59 @@
+/* Reset CSS */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { line-height: 1.5; font-size: 100%; font-family: Arial, sans-serif; color: #5a5a5a; background: #f4f6f8; }
+#container { max-width: 980px; margin: 24px auto; background: #fff; box-shadow: 0 0 1em #ccc; }
+header { padding: 24px 20px; }
+header h1 { margin: 8px 0; color: #777; }
+header p { color: #777; }
+nav { display: block; background: #1f5faa; }
+nav a { padding: 15px 24px; display: inline-block; color: #fff; font-size: 14px; text-decoration: none; font-weight: bold; }
+nav a.active, nav a:hover { background: #2b83ea; }
+#hero { background: #e4e4e5; padding: 42px 24px; margin-bottom: 20px; }
+#hero h2 { margin-bottom: 14px; font-size: 32px; color: #333; }
+#hero p { margin-bottom: 18px; font-size: 16px; line-height: 1.6; max-width: 780px; }
+.btn { display: inline-block; text-decoration: none; border-radius: 3px; padding: 8px 14px; }
+.btn-large { background: #1f5faa; color: #fff; }
+.btn-default { background: #f1f1f1; color: #333; border: 1px solid #ddd; font-size: 13px; }
+#wrapper { display: flex; gap: 18px; padding: 0 20px 24px; align-items: flex-start; }
+#main { width: 68%; min-width: 0; }
+#sidebar { width: 32%; }
+.row { display: flex; margin: 0 -8px; }
+.box { flex: 1; padding: 0 8px; text-align: center; }
+.box img { width: 86px; height: 86px; object-fit: cover; }
+.box h3 { margin: 12px 0; color: #444; }
+.box p { line-height: 1.5; font-size: 13px; margin-bottom: 12px; }
+.image-circle { border-radius: 50%; }
+.divider { border: 0; border-top: 1px solid #eee; margin: 30px 0; }
+.entry { margin: 15px 0; overflow: auto; }
+.entry h2 { margin-bottom: 14px; color: #444; }
+.entry p { line-height: 1.7; }
+.entry img { float: left; width: 120px; margin: 0 15px 8px 0; border-radius: 5px; }
+.entry .right-img { float: right; margin: 0 0 8px 15px; }
+.widget-box { border: 1px solid #eee; margin-bottom: 18px; }
+.widget-box .title { padding: 10px 14px; background: #428bca; color: #fff; font-size: 16px; }
+.widget-box ul { list-style: none; }
+.widget-box li { border-bottom: 1px solid #eee; }
+.widget-box li a { padding: 9px 14px; color: #333; display: block; text-decoration: none; }
+.widget-box li:hover a { background: #eee; }
+.widget-box p { padding: 14px; line-height: 1.6; }
+footer { clear: both; background: #1d1d1d; padding: 18px 20px; color: #eee; }
+.page-content { padding: 26px 24px 36px; min-height: 300px; }
+.page-content h2 { margin-bottom: 16px; color: #333; }
+.page-content p { margin-bottom: 14px; }
+.portfolio { display: flex; gap: 16px; margin: 18px 0; }
+.portfolio article { flex: 1; border: 1px solid #eee; padding: 16px; border-radius: 5px; }
+.portfolio h3 { margin: 8px 0; }
+form label { display: block; margin: 12px 0 5px; font-weight: bold; }
+form input, form textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 3px; font: inherit; }
+form textarea { min-height: 120px; resize: vertical; }
+form button { margin-top: 14px; border: 0; cursor: pointer; font: inherit; }
+.notice { padding: 12px; background: #eef6ff; border-left: 4px solid #1f5faa; margin: 16px 0; }
+@media (max-width: 700px) {
+  #container { margin: 0; }
+  #wrapper { display: block; }
+  #main, #sidebar { width: 100%; }
+  #sidebar { margin-top: 24px; }
+  .row, .portfolio { display: block; }
+  .box, .portfolio article { margin-bottom: 24px; }
+  nav a { padding: 12px; }
+}

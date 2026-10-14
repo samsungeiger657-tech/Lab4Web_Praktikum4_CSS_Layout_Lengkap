@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Element</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 24px; }
+    header { margin-bottom: 20px; }
+    section::after { content: ""; display: table; clear: both; }
+    .box { float: left; padding: 20px; margin-right: 8px; }
+    .div1 { background: red; color: white; }
+    .div2 { background: yellow; color: #222; }
+    .div3 { background: green; color: white; }
+    .div4 { background: blue; color: white; clear: left; float: none; width: 90px; margin-top: 8px; }
+    .note { margin-top: 24px; color: #555; }
+  </style>
+</head>
+<body>
+  <header><h1>Box Element</h1></header>
+  <section>
+    <div class="box div1">Div 1</div>
+    <div class="box div2">Div 2</div>
+    <div class="box div3">Div 3</div>
+    <div class="box div4">Div 4 (clear: left)</div>
+  </section>
+  <p class="note">Contoh box element, float, dan clear sesuai Praktikum 4.</p>
+</body>
+</html>
